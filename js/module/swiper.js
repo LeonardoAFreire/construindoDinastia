@@ -40,7 +40,6 @@ export default function initSwiper() {
     speed: 6000,
     pagination: {
       el: '.swiper-pagination',
-      dynamicBullets: true,
     },
     breakpoints: {
       // when window width is >= 320px
