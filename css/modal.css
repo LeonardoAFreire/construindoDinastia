@@ -1,0 +1,231 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.fechar {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.8;
+  font-family: monospace;
+  cursor: pointer;
+  padding: 20px;
+}
+.fechar:hover {
+  opacity: 1;
+}
+
+.btn-fechar {
+  display: block;
+  justify-self: end;
+  font-size: 1.125rem;
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--cor-0);
+  background: var(--cor-1);
+}
+.valor-morte-acidental {
+  text-align: center;
+}
+
+.diariaTokio,
+.saudeTokio,
+.descontoTokio,
+.farmaciaTokio,
+.nutricaoTokio,
+.psicologicaTokio,
+.saudeAmerica,
+.invalidezAmerica,
+.funeralAmerica,
+.cestaAmerica,
+.pessoalAmerica,
+.psicologicaAmerica,
+.consultaNipomed,
+.fcuni,
+.rendaDinastia,
+.personalFitness,
+.cashBackMySeg {
+  display: none;
+}
+
+.diariaTokio.ativo,
+.saudeTokio.ativo,
+.descontoTokio.ativo,
+.farmaciaTokio.ativo,
+.nutricaoTokio.ativo,
+.psicologicaTokio.ativo,
+.saudeAmerica.ativo,
+.invalidezAmerica.ativo,
+.funeralAmerica.ativo,
+.cestaAmerica.ativo,
+.pessoalAmerica.ativo,
+.psicologicaAmerica.ativo,
+.consultaNipomed.ativo,
+.fcuni.ativo,
+.rendaDinastia.ativo,
+.personalFitness.ativo,
+.cashBackMySeg.ativo {
+  display: block;
+}
+
+.fcuni-beneficios {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fcuni .header-modal {
+  margin-bottom: 0;
+}
+
+.fcuni .bottom-modal {
+  margin-top: 0;
+}
+
+.fcuni-beneficios img {
+  max-width: 1200px;
+  object-fit: cover;
+}
+
+.modal {
+  background: var(--cor-0);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  max-width: calc(100vw - 60px);
+  max-height: calc(100vh - 20px);
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #707070; /* Cor do "polegar" */
+  border-radius: 4px; /* Raio do "polegar" */
+}
+
+.modal::-webkit-scrollbar-track {
+  background-color: var(--cor-2); /* Cor da área de fundo */
+  border-radius: 10px;
+}
+
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.logo-modal {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.bottom-modal {
+  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: grid;
+  place-content: end;
+}
+
+.conteudo-modal {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-modal h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.aviso {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.conteudo-modal p {
+  max-width: 55ch;
+}
+
+.conteudo-modal p + p {
+  margin-top: 10px;
+}
+
+.conteudo-cobertura,
+.segurado {
+  background: var(--cor-4);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: center;
+}
+
+.conteudo-cobertura h6 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.link-renda {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #46668a;
+  border-radius: 4px;
+  color: var(--cor-2);
+  padding: 8px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.link-renda:hover {
+  background: var(--cor-1);
+}
+
+@media (max-width: 500px) {
+  .modal {
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 120px);
+  }
+
+  .logo-modal {
+    width: 150px;
+  }
+}
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal 0.6s forwards;
+}

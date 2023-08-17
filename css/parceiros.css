@@ -1,0 +1,38 @@
+.bg-parceiros {
+  background-color: #ececec;
+}
+
+.parceiros {
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.swiperParceiros {
+  padding-bottom: 20px;
+}
+
+.slide-parceiros {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .parceiros h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .lista-parceiros li {
+    width: 160px;
+  }
+  .lista-parceiros img {
+    width: 160px;
+  }
+}

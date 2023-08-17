@@ -1,0 +1,136 @@
+/* Global */
+:root {
+  --swiper-pagination-color: #141414;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #141414;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lista-numerada {
+  list-style: decimal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  max-width: 55ch;
+  place-self: center;
+}
+
+.lista-numerada li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lista-alfa {
+  list-style: upper-alpha;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  max-width: 55ch;
+  place-self: center;
+}
+
+.aviso-plano {
+  margin-top: 4px;
+}
+
+.lista-alfa li + li {
+  margin-top: 10px;
+}
+
+.lista-dot {
+  padding-left: 20px;
+  list-style: disc;
+  max-width: 55ch;
+  place-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lista-dot li + li {
+  margin-top: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+blockquote,
+dd,
+ol,
+table,
+th,
+tr,
+a {
+  margin: 0px;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cta {
+  background: linear-gradient(to right, #d5ac61, #fcda9b, #ffeac4);
+  border-radius: 10px;
+  padding: 16px 32px;
+  color: #141414;
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  place-self: start;
+  text-align: center;
+}
+
+.whats-icon {
+  position: fixed;
+  bottom: 45px;
+  right: -20px;
+  z-index: 99999;
+}
